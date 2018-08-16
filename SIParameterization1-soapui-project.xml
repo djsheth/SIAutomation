@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="51a6059c-2fa4-4014-ba96-78ec0ae61b0f" activeEnvironment="Default" name="SIAutomtion1" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="bedfb002-b9ca-4247-b9b1-add8151f4d6e" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://crppod01mqiibtest01.genco.com:7064" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://crppod01mqiibtest01.genco.com:7064</con:endpoint></con:endpoints><con:resource name="ItemsFlow" path="/item" id="2cf018d9-ded3-4cce-9c14-b51d5d5e1055"><con:settings/><con:parameters/><con:method name="CreateItem" id="c7d185a4-b6c0-4665-8174-bc79d2834fc5" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/xml</con:mediaType><con:params/><con:element xmlns:fsc="fscip.fedex.com">fsc:FSCIPTransaction</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>FSCResponse</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="CreateRequest" id="07161dea-aef0-4069-bce8-3e2b90faf609" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accesstoken" value="Asdfgehxghil345laHgt"/>
+  <con:entry key="transactionTypeId" value="ITEM"/>
+  <con:entry key="Contenttype" value="XML"/>
+  <con:entry key="customerId" value="50"/>
+  <con:entry key="Sourcesystemid" value="QATEST"/>
+  <con:entry key="userId" value="1234567"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://crppod01mqiibtest01.genco.com:7064</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!--Sample XML file generated by XMLSpy v2017 sp2 (x64) (http://www.altova.com)-->
+<itm:FSCIPTransaction xmlns:sam="http://www.soapui.org/sample/" xmlns:itm="fscip.fedex.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="fscip.fedex.com FedEx%20%20Supply%20Chain%20Standard%20Item%20Interface.xsd">
+       <itm:Header>
+        <Source>ABC_SAP</Source>
+        <ActionType>Update</ActionType>
+        <MessageID/>
+        <MessageType>ITEM</MessageType>
+        <CompanyID>ABCDL</CompanyID>
+        <Locale>English (United States)</Locale>
+        <TimeZone>EST</TimeZone>
+        <Version>1.0</Version>
+        <ReferenceID/>
+        <ExternalDateTimeStamp>2001-12-17T09:30:47Z</ExternalDateTimeStamp>
+    </itm:Header>
+
+    <Items>
+        <Item>
+            <ItemName>00643169936888</ItemName>
+            <Description>REF SET 97</Description>
+            <LongDescription>REF SET 9735500 SPINE REFRENCING</LongDescription>
+            <NMFCFreightClass/>
+            <CommodityCode/>
+            <StorageUOM/>
+            <ItemUpcGtin>00643169766600</ItemUpcGtin>
+            <NetWeight>1</NetWeight>
+            <GrossWeight>1</GrossWeight>
+            <WeightUOM/>
+            <UnitVolume>0</UnitVolume>
+            <VolumeUOM/>
+            <UnitHeight>0.001</UnitHeight>
+            <UnitWidth>0.001</UnitWidth>
+            <UnitLength>0.001</UnitLength>
+            <DimensionUOM/>
+            <DisplayQuantityUOM>CMT</DisplayQuantityUOM>
+            <CommodityLevelDescription/>
+            <ItemBarCode>00643169766600</ItemBarCode>
+            <ProductType>HA</ProductType>
+            <ItemProfileName/>
+            <TypeCode>28200151</TypeCode>
+            <DefaultAssetType>Cheap</DefaultAssetType>
+            <ReferenceField7/>
+            <ReferenceField8/>
+            <ReferenceField9/>
+            <ReferenceField10/>
+            <ReferenceNumberField2>0</ReferenceNumberField2>
+            <ReferenceNumberField3>0</ReferenceNumberField3>
+            <ReferenceNumberField4>0</ReferenceNumberField4>
+            <ReferenceNumberField5>0</ReferenceNumberField5>
+            <VelocityCode>C</VelocityCode>
+            <Model/>
+            <Make/>
+            <LPNType>BOX</LPNType>
+            <UnitPrice>393.64</UnitPrice>
+            <MaximumReceivingToexpireDays>0</MaximumReceivingToexpireDays>
+            <AverageDailyDemand>0</AverageDailyDemand>
+            <ConsumePriorityDateCode/>
+            <ConsumePriorityDateWindow/>
+            <ConsumePriorityDateWindowIncrement>0</ConsumePriorityDateWindowIncrement>
+            <ManufacturingDateRequired/>
+            <ExpireDateRequired/>
+            <LotRequired/>
+            <InventoryStatusRequired>1</InventoryStatusRequired>
+            <CountryOfOriginRequired/>
+            <ShelfDays>0</ShelfDays>
+            <TemperatureZone>D</TemperatureZone>
+            <BuyerDispositionCode/>
+            <StoreDepartment>082</StoreDepartment>
+            <ReceivableFlag>Y</ReceivableFlag>
+            <SerialNumberRequired/>
+            <SerialNumberBarcodeType/>
+            <DuplicateSerialNumberFlag>true</DuplicateSerialNumberFlag>
+            <MinimumReceiveToExpireDays>0</MinimumReceiveToExpireDays>
+            <ProductCategory/>
+            <MarkForDeletion>false</MarkForDeletion>
+            <FlexMapFields>
+                <FlexMap>
+                    <Name>a</Name>
+                    <Value>a</Value>
+                </FlexMap>
+            </FlexMapFields>
+            <ItemSupplierXrefList>
+                <ItemSupplierXref>
+                    <SupplierItemBarcode>763332032179</SupplierItemBarcode>
+                    <ScanQuantity>1</ScanQuantity>
+                    <MarkForDeletion>false</MarkForDeletion>
+                </ItemSupplierXref>
+            </ItemSupplierXrefList>
+            <ItemFacilityWMSList>
+                <ItemFacilityWMS>
+                    <FacilityName>a</FacilityName>
+                    <LPNPerTier>0</LPNPerTier>
+                    <TierPerPallet>0</TierPerPallet>
+                    <QualityInspectGroup/>
+                </ItemFacilityWMS>
+            </ItemFacilityWMSList>
+            <ItemPackageList>
+                <ItemPackage>
+                    <PackageUOM>EA</PackageUOM>
+                    <NetWeight>99</NetWeight>
+                    <Quantity>2</Quantity>
+                    <WeightUOM/>
+                    <Gtin/>
+                    <UnitLength>11</UnitLength>
+                    <UnitHeight>3</UnitHeight>
+                    <UnitWidth>3</UnitWidth>
+                    <DimensionUOM/>
+                    <VolumeUOM/>
+                    <isStandardUOM>true</isStandardUOM>
+                    <MarkForDeletion>false</MarkForDeletion>
+                </ItemPackage>
+            </ItemPackageList>
+        </Item>
+    </Items>
+</itm:FSCIPTransaction>
+
+
+]]></con:request><con:originalUri>https://crppod01mqiibtest01.genco.com/item</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="9e2d5a9d-ed0a-4912-a3d4-53e299ab3c3d" name="EndToEndFlows"><con:description>TestSuite generated for REST Service [https://crppod01mqiibtest01.genco.com:7064]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c851c8c4-4543-42a1-a84c-21197077f57a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ItemsFlow TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [ItemsFlow] located at [/item]</con:description><con:settings/><con:testStep type="groovy" name="Groovy-ExcelRead" id="d9cb27cc-88f6-494d-ba0e-583d00af51a5"><con:settings/><con:config><script>import java.io.File
+import java.util.Date
+import jxl.*
+import jxl.write.*
+import java.lang.String
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
+def inputFolderPath=context.expand('${projectDir}')
+//inputFolderPath = inputFolderPath.replaceAll("\\n","/\n")
+log.info inputFolderPath
+
+File textFile = new File(inputFolderPath + "/smp.txt");
+def String yourData= textFile.getText();
+log.info yourData
+testRunner.testCase.testSuite.setPropertyValue( "XMLFile", yourData )
+
+new File(inputFolderPath).eachFile() 
+{f-> 
+if (f.isFile()&amp;&amp; f.name.endsWith('.xls')){
+log.info f.getName()
+def wb = Workbook.getWorkbook(f)
+def sheet = wb.getSheet("TestCaseData")
+def rows = sheet.getRows()
+def cols = sheet.getColumns()
+
+log.info rows
+for (i = 2; i &lt; rows; i++) {
+	Cell c1 = sheet.getCell(2, i)	
+	log.info c1.getContents()
+	if (c1.getContents().equalsIgnoreCase("Y")){
+
+    for(def j = 2; j&lt; cols; j++){
+    log.info sheet.getCell(j,0).getContents()
+     def x = sheet.getCell(j,0).getContents()
+     def y = sheet.getCell(j,i).getContents()
+     log.info y
+     testRunner.testCase.testSuite.setPropertyValue(x,y)    
+     }
+	}
+	testRunner.runTestStepByName("CreateRequest")
+      def response = context.expand('${CreateRequest#Response}')
+	log.info "response----------"+response
+	def FSCResponse = new XmlSlurper().parseText(response)
+	log.info "FSCResponse------"+FSCResponse
+	def statusid=FSCResponse.TransactionStatus.text()
+	log.info "statusid-------"+statusid
+	def refid=FSCResponse.TransactionReferenceId.text()
+	log.info "refid-------"+refid
+	assert refid!=null
+	def res
+	if(statusid=="000")
+    {
+    	res="Pass"
+    	log.info res
+    }
+   else
+   {
+   	res="Fail"
+    	log.info res
+   }
+    expectedFiledCol2 = sheet.getCell(19,i).getContents()
+    log.info "exp result" + expectedFiledCol2
+    
+  }
+wb.close()  
+}
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy-JSONRead" id="3af51cf1-0c7d-4d70-a72d-41d57a23a304"><con:settings/><con:config><script>import java.io.File
+import java.util.Date
+import jxl.*
+import jxl.write.*
+import java.lang.String
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
+String[] mandatoryHeaders = ["Source", "ActionType", "MessageType", "CompanyID"]
+String[] mandatoryItems = ["ItemName", "Description", "DisplayQuantityUOM", "ItemBarCode", "Value", "Name", 
+"SupplierItemBarcode", "ScanQuantity", "FacilityName", "PackageUOM", "Quantity", "ExecuteOrNot"]
+
+def inputFolderPath=context.expand('${projectDir}')
+inputFolderPath = inputFolderPath.replaceAll("\\n","/\n")
+log.info inputFolderPath
+
+File textFile = new File(inputFolderPath + "/smp.txt");
+def String yourData= textFile.getText();
+log.info yourData
+testRunner.testCase.testSuite.setPropertyValue( "XMLFile", yourData )
+
+new File(inputFolderPath).eachFile()
+{f-> 
+if (f.isFile()&amp;&amp; f.name.endsWith('.json')){
+log.info f.getName()
+log.info f
+String fileContents = f.getText('UTF-8')
+log.info fileContents
+def jsonSlurper = new JsonSlurper()
+def jsonObject = jsonSlurper.parseText(fileContents)
+def a =jsonObject.properties.Header
+def vo = jsonObject.properties.get("Items").get("Item").get(0)
+
+for ( item in a ) {
+    log.info item.key
+    log.info item.value
+    
+}
+testRunner.testCase.testSuite.setPropertyValue(item.key, item.value)
+for (vitem  in vo){
+	log.info vitem.key
+     log.info vitem.value
+     
+}
+testRunner.testCase.testSuite.setPropertyValue(vitem.key, String.valueOf(vitem.value))
+
+testRunner.runTestStepByName("CreateRequest")
+      def response = context.expand('${CreateRequest#Response}')
+	log.info "response----------"+response
+	def FSCResponse = new XmlSlurper().parseText(response)
+	log.info "FSCResponse------"+FSCResponse
+	def statusid=FSCResponse.TransactionStatus.text()
+	log.info "statusid-------"+statusid
+	def refid=FSCResponse.TransactionReferenceId.text()
+	log.info "refid-------"+refid
+	assert refid!=null
+	def res
+	if(statusid=="000")
+    {
+    	log.info "PASS"
+    }
+   else
+   {
+    	log.info "FAIL"
+   }
+    log.info "exp result"
+    
+  }
+  
+}
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CreateRequest" id="488b2bd4-ae0e-456a-abc4-ccd9bc9da7f1" disabled="true"><con:settings/><con:config service="https://crppod01mqiibtest01.genco.com:7064" resourcePath="/item" methodName="CreateItem" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateRequest" id="07161dea-aef0-4069-bce8-3e2b90faf609" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accesstoken" value="Asdfgehxghil345laHgt"/>
+  <con:entry key="transactionTypeId" value="ITEM"/>
+  <con:entry key="Contenttype" value="XML"/>
+  <con:entry key="customerId" value="50"/>
+  <con:entry key="Sourcesystemid" value="QATEST"/>
+  <con:entry key="userId" value="1234567"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://crppod01mqiibtest01.genco.com:7064</con:endpoint><con:request>${#TestSuite#XMLFile}</con:request><con:originalUri>https://crppod01mqiibtest01.genco.com/item</con:originalUri><con:assertion type="XPath Match" id="c734d110-f5dc-4b3a-9950-1e58a66b3ea4" name="XPath Match"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="1b612ecd-410f-4d2e-9545-c975e7a9acb9" name="Contains"><con:configuration><token>TransactionReferenceId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>json1</con:name><con:value>${#TestSuite#ItemsFlow TestCase}</con:value></con:property><con:property><con:name>json</con:name><con:value> {"Json Field Name1":"Value21","Json Field Name2":"Value22","Json Field Name3":"Value23"}</con:value></con:property><con:property><con:name>exp2</con:name><con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:property><con:property><con:name>runorNot</con:name><con:value>y</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>Source</con:name><con:value>M1CSTRINGSTRINGSTRINGSTRINGSTRINGSTRINGSTRINGSTRING</con:value></con:property><con:property><con:name>ActionType</con:name><con:value>Create</con:value></con:property><con:property><con:name>MessageType</con:name><con:value>ITEM</con:value></con:property><con:property><con:name>CompanyID</con:name><con:value>Comn${=System.currentTimeMillis() + ((int)(Math.random()*10000))}</con:value></con:property><con:property><con:name>ItemName</con:name><con:value>Itemn${=System.currentTimeMillis() + ((int)(Math.random()*10000))}</con:value></con:property><con:property><con:name>Description</con:name><con:value>REF SET 97</con:value></con:property><con:property><con:name>DisplayQuantityUOM</con:name><con:value>CMT</con:value></con:property><con:property><con:name>ItemBarCode    </con:name><con:value>643169766700</con:value></con:property><con:property><con:name>Value</con:name><con:value>C</con:value></con:property><con:property><con:name>Name</con:name><con:value>a</con:value></con:property><con:property><con:name>SupplierItemBarcode</con:name><con:value>763332032179</con:value></con:property><con:property><con:name>ScanQuantity</con:name><con:value>1</con:value></con:property><con:property><con:name>FacilityName</con:name><con:value>a</con:value></con:property><con:property><con:name>PackageUOM</con:name><con:value>EA</con:value></con:property><con:property><con:name>Quantity</con:name><con:value>4</con:value></con:property><con:property><con:name>XMLFile</con:name><con:value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!--Sample XML file generated by XMLSpy v2017 sp2 (x64) (http://www.altova.com)-->
+<itm:FSCIPTransaction xmlns:itm="fscip.fedex.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="fscip.fedex.com FedEx%20%20Supply%20Chain%20Standard%20Item%20Interface.xsd">
+    <Header>
+        <Source>${#TestCase#Source}</Source>
+        <ActionType>${#TestCase#ActionType}</ActionType>
+        <MessageType>${#TestCase#MessageType}</MessageType>
+        <CompanyID>${#TestCase#CompanyID}</CompanyID>
+    </Header>
+    <Items>
+        <Item>
+            <ItemName>${#TestCase#ItemName}</ItemName>
+            <Description>${#TestCase#Description}</Description>
+            <DisplayQuantityUOM>${#TestCase#DisplayQuantityUOM}</DisplayQuantityUOM>
+            <ItemBarCode>${#TestCase#ItemBarCode}</ItemBarCode>
+            <FlexMapFields>
+                <FlexMap>
+                    <Name>${#TestCase#Name}</Name>
+                    <Value>${#TestCase#Value}</Value>
+                </FlexMap>
+            </FlexMapFields>
+            <ItemSupplierXrefList>
+                <ItemSupplierXref>
+                    <SupplierItemBarcode>${#TestCase#SupplierItemBarcode}</SupplierItemBarcode>
+                    <ScanQuantity>${#TestCase#ScanQuantity}</ScanQuantity>
+                </ItemSupplierXref>
+            </ItemSupplierXrefList>
+            <ItemFacilityWMSList>
+                <ItemFacilityWMS>
+                    <FacilityName>${#TestCase#FacilityName}</FacilityName>
+                </ItemFacilityWMS>
+            </ItemFacilityWMSList>
+            <ItemPackageList>
+                <ItemPackage>
+                    <PackageUOM>${#TestCase#PackageUOM}</PackageUOM>
+                    <Quantity>${#TestCase#Quantity}</Quantity>
+                </ItemPackage>
+            </ItemPackageList>
+        </Item>
+    </Items>
+</itm:FSCIPTransaction>
+]]></con:value></con:property><con:property><con:name>ExecuteOrNot</con:name><con:value>Y</con:value></con:property><con:property><con:name>Output Json</con:name><con:value/></con:property><con:property><con:name>Expected Results</con:name><con:value>000</con:value></con:property><con:property><con:name>PassOrFail</con:name><con:value/></con:property><con:property><con:name>ExternalDateTimeStamp</con:name><con:value>a</con:value></con:property><con:property><con:name>Locale</con:name><con:value>a</con:value></con:property><con:property><con:name>MessageID</con:name><con:value>amsg</con:value></con:property><con:property><con:name>ReferenceID</con:name><con:value>a</con:value></con:property><con:property><con:name>TimeZone</con:name><con:value>a</con:value></con:property><con:property><con:name>Version</con:name><con:value>a</con:value></con:property><con:property><con:name>AvgerageDailyDemand</con:name><con:value>0</con:value></con:property><con:property><con:name>BuyerDispositionCode</con:name><con:value>a</con:value></con:property><con:property><con:name>CommodityCode</con:name><con:value>a</con:value></con:property><con:property><con:name>CommodityLevelDescription</con:name><con:value>a</con:value></con:property><con:property><con:name>ConsumePriorityDateCode</con:name><con:value>a</con:value></con:property><con:property><con:name>ConsumePriorityDateWindow</con:name><con:value>a</con:value></con:property><con:property><con:name>ConsumePriorityDateWindowIncrement</con:name><con:value>1.1</con:value></con:property><con:property><con:name>CountryOfOriginRequired</con:name><con:value>a</con:value></con:property><con:property><con:name>DefaultAssetType</con:name><con:value>a</con:value></con:property><con:property><con:name>DimensionUOM</con:name><con:value>a</con:value></con:property><con:property><con:name>DuplicateSerialNumberfFlag</con:name><con:value>true</con:value></con:property><con:property><con:name>ExpireDateRequired</con:name><con:value>a</con:value></con:property><con:property><con:name>FlexMapFields</con:name><con:value>{FlexMap=[{Name=a, Value=a}]}</con:value></con:property><con:property><con:name>GrossWeight</con:name><con:value>1.1</con:value></con:property><con:property><con:name>InventoryStatusRequired</con:name><con:value>a</con:value></con:property><con:property><con:name>ItemBarCode</con:name><con:value>a</con:value></con:property><con:property><con:name>ItemFacilityWMSList</con:name><con:value>{ItemFacilityWMS=[{FacilityName=a, LPNPerTier=1.1, QualityInspectGroup=a, TierPerPallet=1.1}]}</con:value></con:property><con:property><con:name>ItemPackageList</con:name><con:value>{ItemPackage=[{DimensionUOM=a, Gtin=a, MarkForDeletion=true, NetWeight=1.1, PackageUOM=a, Quantity=1.1, UnitHeight=1.1, UnitLength=1.1, UnitVolume=1.1, UnitWidth=1.1, VolumeUOM=a, WeightUOM=a, isStandardUOM=true}]}</con:value></con:property><con:property><con:name>ItemProfileName   </con:name><con:value>a</con:value></con:property><con:property><con:name>ItemSupplierXrefList</con:name><con:value>{ItemSupplierXref=[{MarkForDeletion=true, ScanQuantity=1.1, SupplierItemBarcode=a}]}</con:value></con:property><con:property><con:name>ItemUpcGtin</con:name><con:value>a</con:value></con:property><con:property><con:name>LPNType</con:name><con:value>a</con:value></con:property><con:property><con:name>LongDescription</con:name><con:value>a</con:value></con:property><con:property><con:name>LotRequired</con:name><con:value>a</con:value></con:property><con:property><con:name>Make</con:name><con:value>a</con:value></con:property><con:property><con:name>ManufacturingDateRequired</con:name><con:value>a</con:value></con:property><con:property><con:name>MarkForDeletion</con:name><con:value>true</con:value></con:property><con:property><con:name>MaximumReceivingToexpireDays</con:name><con:value>0</con:value></con:property><con:property><con:name>MinimumReceiveToExpireDays</con:name><con:value>0</con:value></con:property><con:property><con:name>Model</con:name><con:value>a</con:value></con:property><con:property><con:name>NMFCFreightClass</con:name><con:value>a</con:value></con:property><con:property><con:name>NetWeight</con:name><con:value>1.1</con:value></con:property><con:property><con:name>ProductCategory</con:name><con:value>a</con:value></con:property><con:property><con:name>ProductType</con:name><con:value>a</con:value></con:property><con:property><con:name>ReceivableFlag</con:name><con:value>a</con:value></con:property><con:property><con:name>ReferenceField10</con:name><con:value>a</con:value></con:property><con:property><con:name>ReferenceField7</con:name><con:value>a</con:value></con:property><con:property><con:name>ReferenceField8</con:name><con:value>a</con:value></con:property><con:property><con:name>ReferenceField9</con:name><con:value>a</con:value></con:property><con:property><con:name>ReferenceNumberField2</con:name><con:value>1.1</con:value></con:property><con:property><con:name>ReferenceNumberField3</con:name><con:value>1.1</con:value></con:property><con:property><con:name>ReferenceNumberField4</con:name><con:value>1.1</con:value></con:property><con:property><con:name>ReferenceNumberField5</con:name><con:value>1.1</con:value></con:property><con:property><con:name>SerialNumberBarcodeType</con:name><con:value>a</con:value></con:property><con:property><con:name>SerialNumberRequired</con:name><con:value>a</con:value></con:property><con:property><con:name>ShelfDays</con:name><con:value>0</con:value></con:property><con:property><con:name>StorageUOM</con:name><con:value>a</con:value></con:property><con:property><con:name>StoreDepartment</con:name><con:value>a</con:value></con:property><con:property><con:name>TemperatureZone</con:name><con:value>a</con:value></con:property><con:property><con:name>TypeCode</con:name><con:value>a</con:value></con:property><con:property><con:name>UnitHeight</con:name><con:value>1.1</con:value></con:property><con:property><con:name>UnitLength</con:name><con:value>1.1</con:value></con:property><con:property><con:name>UnitPrice</con:name><con:value>1.1</con:value></con:property><con:property><con:name>UnitVolume</con:name><con:value>1.1</con:value></con:property><con:property><con:name>UnitWidth</con:name><con:value>1.1</con:value></con:property><con:property><con:name>VelocityCode</con:name><con:value>a</con:value></con:property><con:property><con:name>VolumeUOM</con:name><con:value>a</con:value></con:property><con:property><con:name>WeightUOM</con:name><con:value>a</con:value></con:property><con:property><con:name>Resonse</con:name><con:value/></con:property><con:property><con:name>ExecutionStatus</con:name><con:value/></con:property><con:property><con:name>ExpectedResults</con:name><con:value>000</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
